@@ -11,7 +11,7 @@ class Program
         {
             Console.WriteLine("The last digit of {0} is {1} and is greater than 5", number, lstdg);
         }
-        else if (number < 6 && != 0)
+        else if (number < 6 && number != 0)
         {
             Console.WriteLine("The last digit of {0} is {1} and is less than 6 and not 0", number, lstdg);
         }
