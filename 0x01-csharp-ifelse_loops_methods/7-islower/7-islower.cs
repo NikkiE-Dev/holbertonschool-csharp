@@ -2,7 +2,7 @@
 
 namespace _7_islower
 {
-    class class Character
+    class Character
     {
         public static bool IsLower(char c)
         {
