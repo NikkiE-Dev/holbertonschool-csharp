@@ -6,7 +6,7 @@ namespace _5_print_comb
     {
         static void Main(string[] args)
         {
-            for (int a = 1; a <= 99; a++)
+            for (int a = 0; a <= 99; a++)
             {
                 if (a <= 98)
                 {
