@@ -9,7 +9,7 @@
                Console.WriteLine("Size cannot be negative");
                return null;
             }
-            int[] nwarray = new int[size]
+            int[] nwarray = new int[size];
             for (int a = 0; a < size; a++)
             {
                 nwarray[a] = a;
