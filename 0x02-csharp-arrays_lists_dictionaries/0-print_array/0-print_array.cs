@@ -18,6 +18,6 @@
                 Console.Write(a);                    
             }
             Console.WriteLine("");
-            return array; 
+            return nwarray; 
         }
     }
