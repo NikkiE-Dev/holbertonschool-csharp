@@ -1,7 +1,5 @@
 ﻿using System;
 
-namespace _0_print_array
-{
     class Array
     {
         public static int[] CreatePrint(int size)
@@ -11,10 +9,10 @@ namespace _0_print_array
                Console.WriteLine("Size cannot be negative");
                return null;
             }
-            int[] array = new int[size]
+            int[] nwarray = new int[size]
             for (int a = 0; a < size; a++)
             {
-                array[a] = a;
+                nwarray[a] = a;
                 if (a != 0)
                     Console.Write(" ");
                 Console.Write(a);                    
@@ -23,4 +21,3 @@ namespace _0_print_array
             return array; 
         }
     }
-}
