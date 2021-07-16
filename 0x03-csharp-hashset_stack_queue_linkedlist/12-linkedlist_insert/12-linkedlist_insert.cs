@@ -25,6 +25,7 @@ class LList
                 current = current.Next;
             }
         }
+        myLList.AddFirst(newNode);
         return newNode;
     }
     
