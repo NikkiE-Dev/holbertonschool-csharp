@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
-    class List
+class List
+{
+    public static int Sum(List<int> myList)
     {
-        public static int Sum(List<int> myList)
+        List<int> sumList = myList.Distinct().ToList();
+        int sum = 0;
+        for (int a = 0; a < sumList.Count; a++)
         {
-            int sum = 0;
-            List<int> sumList = myList;
-            for (int a = 0; a < sumList.Count; a++)
-            {
-                if (sumList[a] != sumList[a - 1] || a == 0)
-                    sum += sumList[a];
-            }
-            return (sum);
+            sum += sumList[a];
         }
+        return sum;
     }
+}
