@@ -24,9 +24,9 @@ class List
                 {
                     Console.Write(" {0}", a);
                 }
-            }
             Console.WriteLine("");
             return printlst;
+            }
         }
     }
 }
