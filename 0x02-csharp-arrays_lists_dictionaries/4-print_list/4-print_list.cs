@@ -7,7 +7,7 @@ class List
     {
         if (size < 0)
         {
-            Console.Write("Size cannot be negative");
+            Console.WriteLine("Size cannot be negative");
             return null;
         }
         else
@@ -24,9 +24,9 @@ class List
                 {
                     Console.Write(" {0}", a);
                 }
+            }
             Console.WriteLine("");
             return printlst;
-            }
         }
     }
 }
