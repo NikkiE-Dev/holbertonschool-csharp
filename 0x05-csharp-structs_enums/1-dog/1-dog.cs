@@ -1,11 +1,11 @@
-﻿public struct Dog
+﻿struct Dog
 {
     public string name;
     public float age;
     public string owner;
     public Rating rating;
 }
-public enum Rating
+enum Rating
 {
     Good,
     Great,
