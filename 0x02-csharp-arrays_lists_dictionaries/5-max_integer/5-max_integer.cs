@@ -8,7 +8,7 @@ class List
             if (myList == null)
             {
                 Console.WriteLine("List is empty");
-                Environment.Exit(-1);
+                return (-1);
             }
             myList.Sort();
             myList.Reverse();
