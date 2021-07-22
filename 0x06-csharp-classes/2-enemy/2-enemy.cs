@@ -7,10 +7,10 @@ namespace Enemies
     {
         ///<summary>Creates a public field.</summary>
         public int health;
-        ///<summary>Creates a public constructor.</summary>
+            ///<summary>Creates a public constructor.</summary>
             public Zombie()
             {
-                this.health = 0;
+                health = 0;
             }
             ///<summary>Creates a 2nd public constructor.</summary>
             public Zombie(int value)
@@ -18,6 +18,10 @@ namespace Enemies
                 if (value < 0)
                 {
                     throw new ArgumentException("Health must be greater than or equal to 0");
+                }
+                else
+                {
+                    health = value;
                 }
             }
     }
