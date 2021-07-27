@@ -41,6 +41,10 @@ namespace MyMath.Tests
         [Test]
         public void Null_Matrix()
         {
+            int[,] matrix = null;
+            int num = 10;
+            int[,] result = MyMath.Matrix.Divide(matrix, 0);
+            Assert.IsNull(result);
         }
     }
 }
