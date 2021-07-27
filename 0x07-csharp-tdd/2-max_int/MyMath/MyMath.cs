@@ -9,7 +9,7 @@ namespace MyMath
         ///<summary>Creates a protype.</summary>
         public static int Max(List<int> nums)
         {
-            if (nums.Length == 0)
+            if (nums.Count == 0 || nums == null)
             {
                 return 0;
             }
