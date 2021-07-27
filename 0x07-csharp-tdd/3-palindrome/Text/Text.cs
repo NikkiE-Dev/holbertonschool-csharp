@@ -4,8 +4,10 @@ using System.Collections.Generic;
 
 namespace Text
 {
+    ///<summary>Creates a public class named Operations.</summary>
     public class Str
     {
+        ///<summary>Creates a protype.</summary>
         public static bool IsPalindrome(string s)
         {
             List<char> basic = new List<char>();
