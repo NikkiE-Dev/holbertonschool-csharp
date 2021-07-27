@@ -12,7 +12,7 @@ namespace Text.Tests
         [Test]
         public void Palidrome()
         {
-            string text = "level";
+            string text = "doggod";
             string textrev = Text.Str.IsPalindrome(text);
             Assert.IsTrue(text.SequenceEqual(textrev));
         }
