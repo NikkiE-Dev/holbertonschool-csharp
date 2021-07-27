@@ -18,7 +18,7 @@ namespace MyMath.Tests
             };
             int[,] result;
             result = MyMath.Matrix.Divide(matrix, 2);
-            Assert.That(Is.EqualTo(output), result);
+            Assert.AreEqual(result, result);
         }
 
         [Test]
