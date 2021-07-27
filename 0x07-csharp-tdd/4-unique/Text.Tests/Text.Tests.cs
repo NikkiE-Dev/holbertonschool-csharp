@@ -11,7 +11,7 @@ namespace Text.Tests
         {
             string test = "Howdyyall";
             int result = Text.Str.UniqueChar(test);
-            Assert.Equal(result, 0);
+            Assert.Equals(result, 0);
         }
 
         [Test]
