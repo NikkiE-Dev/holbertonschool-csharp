@@ -28,6 +28,14 @@ namespace MyMath.Tests
         [Test]
         public void Division_By_Zero()
         {
+            int[,] matrix = {
+                {50, 20, -20},
+                {40, 548, 120},
+                {88, 42, -10}
+            };
+            int num = 0;
+            int[,] result = MyMath.Matrix.Divide(matrix, 0);
+            Assert.IsNull(result);
         }
 
         [Test]
