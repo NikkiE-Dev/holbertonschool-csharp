@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
 
 namespace Text.Tests
@@ -13,14 +14,9 @@ namespace Text.Tests
         {
             string text = "level";
             string textrev = Text.Str.IsPalindrome(text);
-            Assert.IsTrue(text == textrev);
+            Assert.AreSame(text, textrev);
 
         }
 
-        [Test]
-        public void Test1()
-        {
-            Assert.Pass();
-        }
     }
 }
