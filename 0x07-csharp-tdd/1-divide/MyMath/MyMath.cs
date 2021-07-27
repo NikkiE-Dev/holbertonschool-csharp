@@ -20,7 +20,7 @@ namespace MyMath
             int mrow = matrix.GetLength(0);
             int mcolumn = matrix.GetLength(1);
             int[,] newMatrix = new int[mrow, mcolumn];
-            for (int a = 0; a < mrows; a++)
+            for (int a = 0; a < mrow; a++)
             {
                 for (int b = 0; b < mcolumn; b++)
                 {
