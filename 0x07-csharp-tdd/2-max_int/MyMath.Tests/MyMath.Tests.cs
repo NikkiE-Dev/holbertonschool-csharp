@@ -21,8 +21,33 @@ namespace MyMath.Tests
         [Test]
         public void Empty_List()
         {
-            List<int> nums = newList<int>();
+            List<int> nums = new List<int>();
             int max = 0;
+            int result = MyMath.Operations.Max(nums);
+            Assert.IsNull(nums);
+        }
+
+        [Test]
+        public void Max_Int_Neg()
+        {
+            LList<int> nums = new List<int>(){18, 24, -2, 64, 128};
+            int max = 128;
+            int result = MyMath.Operations.Max(nums);
+            Assert.AreEqual(result, max);
+        }
+        [Test]
+        public void Max_Int_Beginning()
+        {
+            LList<int> nums = new List<int>(){128, 18, 24, 2, 64};
+            int max = 128;
+            int result = MyMath.Operations.Max(nums);
+            Assert.AreEqual(result, max);
+        }
+        [Test]
+        public void Max_Int_End()
+        {
+            LList<int> nums = new List<int>(){18, 24, 2, 64, 128};
+            int max = 128;
             int result = MyMath.Operations.Max(nums);
             Assert.AreEqual(result, max);
         }
