@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace Text.Tests
@@ -9,7 +11,7 @@ namespace Text.Tests
         {
             string test = "Howdyyall";
             int result = Text.Str.UniqueChar(test);
-            Assert.IsEqual(result, 0);
+            Assert.Equal(result, 0);
         }
 
         [Test]
