@@ -10,9 +10,9 @@ namespace MyMath.Tests
     public class Tests
     {
         [Test]
-        public void Max_Int()
+        public void Max_Int_Middle()
         {
-            List<int> nums = new List<int>(){18, 24, 50, 2, 128, 64};
+            List<int> nums = new List<int>(){18, 24, 128, 2, 64};
             int max = 128;
             int result = MyMath.Operations.Max(nums);
             Assert.AreEqual(result, max);
