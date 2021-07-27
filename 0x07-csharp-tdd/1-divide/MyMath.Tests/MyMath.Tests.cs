@@ -17,7 +17,19 @@ namespace MyMath.Tests
                 {88, 42, -10}
             };
             int[,] result;
+            int i, j;
             result = MyMath.Matrix.Divide(matrix, 2);
+            if (result != null)
+            {
+                for (i = 0; i < result.GetLength(0); i++)
+                {
+                    for (j = 0; j < result.GetLength(1); j++)
+                    {
+                        Console.Write(result[i,j] + " ");
+                    }
+                    Console.WriteLine();
+                }
+            }
             Assert.AreEqual(result, result);
         }
 
