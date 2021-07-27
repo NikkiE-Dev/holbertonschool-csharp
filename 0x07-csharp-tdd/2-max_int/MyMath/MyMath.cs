@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace MyMath
 {
@@ -10,7 +11,7 @@ namespace MyMath
         public static int Max(List<int> nums)
         {
             int result = 0;
-            if (nums.Count == 0)
+            if (nums.Count == 0 || nums == null)
             {
                 return 0;
             }
