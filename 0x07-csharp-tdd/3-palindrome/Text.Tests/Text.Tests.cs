@@ -14,8 +14,7 @@ namespace Text.Tests
         {
             string text = "level";
             string textrev = Text.Str.IsPalindrome(text);
-            Assert.AreSame(text, textrev);
-
+            Assert.AreEqual(text, textrev);
         }
 
     }
