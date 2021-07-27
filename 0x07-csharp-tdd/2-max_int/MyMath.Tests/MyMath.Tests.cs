@@ -1,9 +1,11 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 
 namespace MyMath.Tests
 {
+    /// <summary>Test case for Max int.</summary>
     [TestFixture]
     public class Tests
     {
