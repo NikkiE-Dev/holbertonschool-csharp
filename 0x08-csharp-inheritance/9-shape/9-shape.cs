@@ -82,6 +82,7 @@ public class Square : Rectangle
     {
         get
         {
+            
             if (size < 0)
             {
                 throw new ArgumentException("Size must be greater than or equal to 0");
