@@ -24,18 +24,18 @@ class Rectangle : Shape
     {
         get
         {
-            return width;
-        }
-        set
-        {
             if (width < 0)
             {
                 throw new ArgumentException("Width must be greater than or equal to 0");
             }
             else
             {
-                width = value;
+                return width;
             }
+        }
+        set
+        {
+            width = value;
         }
     }
     ///<summary>Creates a 2nd public property.</summary>
@@ -43,19 +43,18 @@ class Rectangle : Shape
     {
         get
         {
-            return height;
-        }
-        set
-        {
             if (height < 0)
             {
                 throw new ArgumentException("Height must be greater than or equal to 0");
             }
             else
             {
-                height = value;
+                return height;
             }
-
+        }
+        set
+        {
+            height = value;
         }
     }
 
