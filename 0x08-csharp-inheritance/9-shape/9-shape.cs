@@ -82,21 +82,20 @@ public class Square : Rectangle
     {
         get
         {
-            
-            if (size < 0)
+            return size;
+        }
+        set
+        {
+            if (value < 0)
             {
                 throw new ArgumentException("Size must be greater than or equal to 0");
             }
             else
             {
-                return size;
+                Width = value;
+                Height = value;
+                size = value;
             }
-        }
-        set
-        {
-            Width = value;
-            Height = value;
-            size = value;
         }
     }
     ///<summary>Creates a public .toString() method.</summary>
