@@ -22,7 +22,7 @@ namespace MyMath.Tests
             List<int> nums = new List<int>();
             int max = 0;
             int result = MyMath.Operations.Max(nums);
-            Assert.IsNull(nums);
+            Assert.That(result, IsEqualTo(max));
         }
 
         [Test]
