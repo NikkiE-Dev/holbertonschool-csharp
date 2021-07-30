@@ -19,7 +19,7 @@ namespace Text.Tests
          [Test]
         public void Palindrome_Punc()
         {
-            Assert.True(Text.Str.IsPalindrome("dog,god"));
+            Assert.True(Text.Str.IsPalindrome("doggod."));
         }
          [Test]
         public void Palindrome_Space()
