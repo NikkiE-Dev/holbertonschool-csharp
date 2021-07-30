@@ -29,8 +29,8 @@ namespace MyMath.Tests
         [Test]
         public void Max_Int_Neg()
         {
-            List<int> nums = new List<int>(){18, 24, -2, 64, 128};
-            int max = 128;
+            List<int> nums = new List<int>(){-18, -24, -2, -64, -128};
+            int max = -2;
             int result = MyMath.Operations.Max(nums);
             Assert.AreEqual(result, max);
         }
