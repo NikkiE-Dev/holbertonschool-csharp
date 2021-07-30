@@ -50,5 +50,12 @@ namespace MyMath.Tests
             int result = MyMath.Operations.Max(nums);
             Assert.AreEqual(result, max);
         }
+        [Test]
+        public void Max_INT_NULL()
+        {
+            List<int> nums = null;
+            int result = MyMath.Operations.Max(nums);
+            Assert.AreEqual(result, 0);
+        }
     }
 }
