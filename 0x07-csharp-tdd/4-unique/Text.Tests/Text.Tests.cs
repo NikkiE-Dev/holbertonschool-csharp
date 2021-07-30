@@ -29,11 +29,11 @@ namespace Text.Tests
             Assert.AreEqual(result, 6);
         }
         [Test]
-        public void No_rep_char()
+        public void No_unique_char()
         {
-            string test = "Howdy";
+            string test = "HHoowwddyyaall";
             int result = Text.Str.UniqueChar(test);
-            Assert.AreEqual(result, 0);
+            Assert.AreEqual(result, -1);
         }
         [Test]
         public void Empty_string()
