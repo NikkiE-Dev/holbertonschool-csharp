@@ -19,12 +19,12 @@ namespace Text.Tests
          [Test]
         public void Palindrome_Punc()
         {
-            Assert.True(Text.Str.IsPalindrome("dog.god"));
+            Assert.True(Text.Str.IsPalindrome("dog,god"));
         }
          [Test]
         public void Palindrome_Space()
         {
-            Assert.True(Text.Str.IsPalindrome(" dog god "));
+            Assert.True(Text.Str.IsPalindrome("d oggod "));
         }
          [Test]
         public void Palidrome_Empty()
