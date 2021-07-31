@@ -16,14 +16,12 @@ namespace Text
             
             int count = 1, idx = 0;
             
-            while (idx < s.Length)
+           for (; idx < s.Length; idx++)
             {
                 if (char.IsUpper(s[idx]))
                 {
-                    idx++;
                     count++;
                 }
-                idx++;
             }
             return count;
         }
