@@ -11,22 +11,21 @@ namespace Text
         ///<summary>Creates a protype.</summary>
         public static int CamelCase(string s)
         {
-            int count = 0, idx = 0;
-
-            while (index < s.Length && char.IsWhiteSpace(s[idx]))
-                idx++;
-
+            if (s == null || s.Legnth == 0)
+                return count;
+            
+            int count = 1, idx = 0;
+            
             while (idx < s.Length)
             {
-                while (idx < s.Length && !char.IsWhiteSpace(s[idx]))
+                if (char.IsWhiteSpace(s[idx]))
                     idx++;
+                    count++;
 
-                count++;
-
-
-                while (idx < s.Length && char.IsWhiteSpace(s[idx]))
+                if (!char.IsWhiteSpace(s[idx]))
                     idx++;
             }
+            return count;
         }
     }
 }
