@@ -12,18 +12,18 @@ namespace Text
         public static int CamelCase(string s)
         {
             if (s == null || s.Legnth == 0)
-                return count;
+                return (0);
             
             int count = 1, idx = 0;
             
             while (idx < s.Length)
             {
-                if (char.IsWhiteSpace(s[idx]))
+                if (char.IsUpper(s[idx]))
+                {
                     idx++;
                     count++;
-
-                if (!char.IsWhiteSpace(s[idx]))
-                    idx++;
+                }
+                idx++;
             }
             return count;
         }
