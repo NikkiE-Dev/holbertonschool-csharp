@@ -31,7 +31,7 @@ namespace Text.Tests
         public void Empty_string()
         {
             string test = "";
-            int result = Text.Str.UniqueChar(test);
+            int result = Text.Str.CamelCase(test);
             Assert.AreEqual(result, 0);
         }
     }
