@@ -11,7 +11,7 @@ namespace Text
         ///<summary>Creates a protype.</summary>
         public static int CamelCase(string s)
         {
-            if (s == null || s.Legnth == 0)
+            if (s == null || s.Length == 0)
                 return (0);
             
             int count = 1, idx = 0;
