@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace _3_magnitude
-{
+    ///<summary>Creates a class to calculate vector.</summary>
     class VectorMath
     {
+        ///<summary>Creates a protype with parameters.</summary>
         public static double Magnitude(double[] vector)
         {
             if (vector.Length == 2)
@@ -17,4 +17,3 @@ namespace _3_magnitude
         }   
         
     }
-}
