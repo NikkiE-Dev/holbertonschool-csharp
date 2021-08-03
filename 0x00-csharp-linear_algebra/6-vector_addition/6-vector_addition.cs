@@ -6,17 +6,15 @@
         ///<summary>Creates a protype with parameters.</summary>
         public static double[] Add(double[] vector1, double[] vector2)
         {
-            int a = (vector1[0] + vector2[0]), b = (vector1[1] + vector2[1]), c = (vector1[2] + vector2[2]);
+            double[] result = new double[1] {-1};
             
             if (vector1.Length == 2 && vector2.Length == 2)
-                
-                return String.Format("({0}, {1}, {2})", a, b);
+                result = new double[2] {vector1[0] + vector2[0], vector1[1] + vector2[1]};
 
             if (vector1.Length == 3 && vector2.Length == 3)
-                return String.Format("({0}, {1}, {2})", a, b, c);
+                result = new double[3] {vector1[0] + vector2[0], vector1[1] + vector2[1], vector1[2] + vector2[2]};
         
-            else
-                return (-1);
+            return (result);
         }   
         
     }
