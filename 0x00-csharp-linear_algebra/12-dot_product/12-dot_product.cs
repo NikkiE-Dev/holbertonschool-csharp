@@ -8,11 +8,14 @@
         {
             double result = -1;
             
-            if ((vector1.Length == 2  || vector2.Length == 3) && vector1.Length == vector2.Length)
+            if ((vector1.Length == 2  || vector1.Length == 3) && vector1.Length == vector2.Length)
+            {
                 result = 0;
                 for (int a = 0; a < vector2.Length; a++)
+                {
                     result += (vector1[a] * vector2[a]);
-
+                }
+            }
             return (result);
         }   
         
