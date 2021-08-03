@@ -6,14 +6,13 @@
         ///<summary>Creates a protype with parameters.</summary>
         public static double DotProduct(double[] vector1, double[] vector2)
         {
-            double[] result = new double[1] {-1};
+            double result = -1;
             
-            if (vector1.Length == 2 && vector2.Length == 2)
-                result = new double[1] {vector1[0] * vector2[0] + vector1[1] * vector2[1]};
+            if ((vector1.Length == 2  || vector2.Length == 3) && vector1.Length == vector2.Length)
+                result = 0;
+                for (int a = 0; a < vector2.Length; a++)
+                    result += (vector1[a] * vector2[a]);
 
-            if (vector1.Length == 3 && vector2.Length == 3)
-                result = new double[1] {vector1[0] * vector2[0] + vector1[1] * vector2[1] + vector1[2] * vector2[2]};
-        
             return (result);
         }   
         
