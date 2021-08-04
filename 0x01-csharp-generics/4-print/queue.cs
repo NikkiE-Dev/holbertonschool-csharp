@@ -60,7 +60,7 @@ public class Queue<T>
         return (rmv.value);
     }
 
-    ///<summary>Method that removes the first node in the queue and returns its value.</summary>
+    ///<summary>Method that prints the queue, starting from the head.</summary>
     public void Print()
     {
         Node first = head;
