@@ -3,9 +3,13 @@
 ///<summary>Creates a new class.</summary>
 public class Queue<T>
 {
-    ///<summary>Creates properties Queue class.</summary>
+    ///<summary>Creates properties for head of the queue.</summary>
     public Node head = null;
+
+    ///<summary>Creates properties for tail of the queue.</summary>
     public Node tail = null;
+
+    ///<summary>Creates properties counts how many nodes are in the queue.</summary>
     public int count = 0;
     
     ///<summary>Creates a method that returns the Queue’s type.</summary>
@@ -39,7 +43,10 @@ public class Queue<T>
     ///<summary>Creates a 2nd new class.</summary>
     public class Node
     {
+        ///<summary>Creates a generic variable value.</summary>   
         public T value = default(T);
+
+        ///<summary>Creates a Node variable.</summary>
         public Node next = null;
 
         ///<summary>Creates a constuctor for Node class.</summary>
