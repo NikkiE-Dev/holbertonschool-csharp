@@ -68,7 +68,7 @@ public class Queue<T>
         {
             Console.WriteLine("Queue is empty");
         }
-        if (first != null)
+        while (first != null)
         {
             Console.WriteLine(first.value.ToString());
             first = first.next;
