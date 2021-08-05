@@ -10,8 +10,8 @@ public abstract class Base
     public override string ToString()
     {
         return (name + " is a " + this.GetType().ToString());
-    }
-    
+    } 
+}
     ///<summary>Creating interface named Interactive.</summary>
     interface IInteractive
     {
@@ -36,17 +36,24 @@ public abstract class Base
         ///<summary>Creates an int property for interface.</summary>
         bool isCollected { get; set; }
     }
-
     ///<summary>Creating an class that inherits from Base class and the interfaces.</summary>
-    class TestObject : Base, IInteractive, IBreakable, ICollectable
+    public class TestObject : Base, IInteractive, IBreakable, ICollectable
     {
+        ///<summary>Inheriting properties for interface.</summary>
         public void Interact()
         {}
+
+        ///<summary>Inheriting properties for interface.</summary>
         public void Break()
         {}
+
+        ///<summary>Inheriting properties for interface.</summary>
         public int durability { get; set; }
+
+        ///<summary>Inheriting properties for interface.</summary>
         public void Collect()
         {}
+
+        ///<summary>Inheriting properties for interface.</summary>
         public bool isCollected { get; set; }
     }
-}
