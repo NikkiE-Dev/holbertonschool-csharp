@@ -124,7 +124,7 @@ public abstract class Base
             }
             else
             {
-                Console.WriteLine("You have already picked up the {0}", name);
+                Console.WriteLine("You have already picked up the {0}.", name);
             }
         }
     }
