@@ -4,7 +4,7 @@
 public abstract class Base
 {
     ///<summary>Creates property obj named "name".</summary>
-    public string name;
+    public string name { get; set; }
 
     ///<summary>Method that prints obj and obj type.</summary>
     public override string ToString()
