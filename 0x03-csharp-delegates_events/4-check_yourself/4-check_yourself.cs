@@ -144,7 +144,7 @@ public class Player
         {
             Console.WriteLine("{0} isn't doing too great...", name);
         }
-        else if (e.currentHp >= (this.maxHp * 0.25) && e.currentHp > 0)
+        else if (e.currentHp < (this.maxHp * 0.25) && e.currentHp > 0)
         {
             Console.WriteLine("{0} needs help!", name);
         }
